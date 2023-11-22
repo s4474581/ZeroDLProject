@@ -55,7 +55,7 @@ if __name__ == '__main__':
             total_loss += loss
             loss_count += 1
 
-        # Perplexity(ppl)
+        # Perplexity(ppl)⇨確率の逆数・低いほどいい
         ppl = np.exp(total_loss / loss_count)
         print(f'| epoch {epoch+1} | perplexity {ppl:.2f}%')
         ppl_list.append(float(ppl))
