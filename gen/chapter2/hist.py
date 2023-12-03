@@ -9,6 +9,7 @@ if __name__ == '__main__':
     xs = np.loadtxt(path)
     print('xs.shape:', xs.shape)
 
+    # histogram
     plt.hist(xs, bins='auto', density=True)
     plt.show()
     plt.close()
